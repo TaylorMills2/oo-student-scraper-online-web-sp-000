@@ -3,7 +3,7 @@ require 'pry'
 
 class Scraper
 
-  def self.scrape_students(student_index_array)
+  def self.scrape_students = Scraper.scrape_index_page(index_url)
     students = []
     html = open(index_url)
     index = Nokogiri::HTML(html)
